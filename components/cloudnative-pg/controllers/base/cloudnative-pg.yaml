@@ -1,0 +1,28 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: cloudnative-pg
+spec:
+  interval: 1h
+  url: oci://ghcr.io/cloudnative-pg/charts/cloudnative-pg
+  ref:
+    semver: ~0
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: extract
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: cloudnative-pg
+spec:
+  interval: 1h
+  chartRef:
+    kind: OCIRepository
+    name: cloudnative-pg
+  driftDetection:
+    mode: enabled
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
