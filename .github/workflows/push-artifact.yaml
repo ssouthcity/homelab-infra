@@ -18,6 +18,7 @@ jobs:
       matrix:
         component:
           - cloudnative-pg
+          - csi-nfs
           - monitoring
     steps:
       - name: Checkout
