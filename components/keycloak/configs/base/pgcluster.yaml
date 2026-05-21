@@ -1,0 +1,24 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: keycloak-db
+spec:
+  instances: 3
+
+  storage:
+    size: 8Gi
+
+  bootstrap:
+    initdb:
+      database: keycloak
+      owner: keycloak
+
+  managed:
+    services:
+      disabledDefaultServices:
+        - ro # keycloak only needs rw
+        - r
+
+  affinity:
+    enablePodAntiAffinity: true
+    topologyKey: kubernetes.io/hostname
