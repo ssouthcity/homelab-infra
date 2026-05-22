@@ -19,6 +19,7 @@ jobs:
         component:
           - cloudnative-pg
           - csi-nfs
+          - metallb
           - monitoring
     steps:
       - name: Checkout
