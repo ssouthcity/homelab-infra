@@ -4,7 +4,7 @@ metadata:
   name: metallb
 spec:
   interval: 1h
-  url: oci://ghcr.io/ssouthcity/homelab-infra/mirror/charts
+  url: oci://ghcr.io/ssouthcity/mirror/charts/metallb
   ref:
     semver: ~0
   layerSelector:
@@ -25,13 +25,7 @@ spec:
     crds: Create
   upgrade:
     crds: CreateReplace
-  values: {}
-    # prometheus:
-    #   serviceMonitor:
-    #     enabled: true
-    #     speaker:
-    #       additionalLabels:
-    #         release: kube-prometheus-stack
-    #     controller:
-    #       additionalLabels:
-    #         release: kube-prometheus-stack
+  values:
+    prometheus:
+      serviceMonitor:
+        enabled: true
