@@ -1,8 +1,8 @@
 apiVersion: mirror.fluxcd.io/v1alpha1
 kind: Config
 artifacts:
-  - source: oci://quay.io/jetstack/charts/cert-manager
-    destination: oci://ghcr.io/ssouthcity/mirror/charts/cert-manager
+  - source: quay.io/jetstack/charts/cert-manager
+    destination: ghcr.io/ssouthcity/mirror/charts/cert-manager
     selector:
       semver: "1.x"
     includeReferrers: true
