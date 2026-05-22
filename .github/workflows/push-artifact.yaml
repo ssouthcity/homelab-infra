@@ -17,6 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         component:
+          - cert-manager
           - cloudnative-pg
           - csi-nfs
           - metallb
