@@ -14,6 +14,7 @@ jobs:
       matrix:
         component:
           - cert-manager
+          - external-dns
           - metallb
     steps:
       - name: Checkout

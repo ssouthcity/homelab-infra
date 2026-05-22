@@ -20,6 +20,7 @@ jobs:
           - cert-manager
           - cloudnative-pg
           - csi-nfs
+          - external-dns
           - gateway-api
           - metallb
           - monitoring
