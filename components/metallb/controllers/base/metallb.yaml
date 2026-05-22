@@ -4,6 +4,7 @@ metadata:
   name: metallb
 spec:
   interval: 1h
+  serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/metallb
   ref:
     semver: ~0
