@@ -26,6 +26,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Sync Kubernetes SIGs Charts
-        run: flux-mirror sync -c sync/$COMPONENT.yaml --no-progress
+        run: flux-mirror sync sync/$COMPONENT.yaml --no-progress
         env:
           COMPONENT: ${{ matrix.component }}
