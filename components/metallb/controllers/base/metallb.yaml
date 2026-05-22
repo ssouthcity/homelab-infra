@@ -1,0 +1,37 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: metallb
+spec:
+  interval: 1h
+  url: oci://ghcr.io/ssouthcity/homelab-infra/mirror/charts
+  ref:
+    semver: ~0
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: extract
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: metallb
+spec:
+  releaseName: metallb
+  interval: 30m
+  chartRef:
+    kind: OCIRepository
+    name: metallb
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
+  values: {}
+    # prometheus:
+    #   serviceMonitor:
+    #     enabled: true
+    #     speaker:
+    #       additionalLabels:
+    #         release: kube-prometheus-stack
+    #     controller:
+    #       additionalLabels:
+    #         release: kube-prometheus-stack
