@@ -3,5 +3,5 @@ kind: StorageClass
 metadata:
   name: homelab-nfs
 parameters:
-  server: 10.0.1.134
+  server: 10.0.10.134
   share: /var/nfs/shared/Homelab
