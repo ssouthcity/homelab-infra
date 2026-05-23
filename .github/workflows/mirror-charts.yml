@@ -15,6 +15,7 @@ jobs:
         component:
           - cert-manager
           - external-dns
+          - longhorn
           - metallb
     steps:
       - name: Checkout

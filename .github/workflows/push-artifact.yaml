@@ -25,6 +25,7 @@ jobs:
           - keycloak
           - kgateway
           - kubelet-serving-cert-approver
+          - longhorn
           - metallb
           - monitoring
     steps:

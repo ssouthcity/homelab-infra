@@ -1,0 +1,7 @@
+apiVersion: mirror.fluxcd.io/v1alpha1
+kind: Config
+charts:
+  - name: longhorn
+    source: https://charts.longhorn.io
+    destination: oci://ghcr.io/ssouthcity/mirror/charts
+    limit: 3
