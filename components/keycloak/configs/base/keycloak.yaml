@@ -10,10 +10,10 @@ spec:
     port: 5432
     database: keycloak
     usernameSecret:
-      name: keycloak-db-keycloak
+      name: keycloak-db-app
       key: username
     passwordSecret:
-      name: keycloak-db-keycloak
+      name: keycloak-db-app
       key: password
   http:
     httpEnabled: true
