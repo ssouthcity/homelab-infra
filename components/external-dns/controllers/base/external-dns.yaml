@@ -4,6 +4,7 @@ metadata:
   name: external-dns
 spec:
   interval: 1h
+  serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/external-dns
   ref:
     semver: ~1
