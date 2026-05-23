@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - ./keycloak-db.yaml
   - ./keycloak-http.yaml
+  - ./keycloak-realm.yaml
   - ./keycloak.yaml
