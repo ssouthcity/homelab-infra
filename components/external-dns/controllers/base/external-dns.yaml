@@ -38,3 +38,4 @@ spec:
             key: api-token
     sources:
       - gateway-httproute
+    policy: sync
