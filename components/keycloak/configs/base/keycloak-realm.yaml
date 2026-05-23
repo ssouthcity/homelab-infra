@@ -8,4 +8,16 @@ spec:
     realm: homelab
     enabled: true
     displayName: Homelab
-    browserFlow: browser-webauthn-passwordless
+    browserFlow: passkey
+
+    authenticationFlows:
+      - alias: passkey
+        description: Passkey authentication
+        providerId: basic-flow
+        topLevel: true
+        builtIn: false
+        authenticationExecutions:
+          - authenticatorFlow: false
+            authenticator: webauthn-authenticator-passwordless
+            requirement: REQUIRED
+            priority: 10
