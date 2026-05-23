@@ -22,6 +22,7 @@ jobs:
           - csi-nfs
           - external-dns
           - gateway-api
+          - keycloak
           - kgateway
           - kubelet-serving-cert-approver
           - metallb
