@@ -36,3 +36,5 @@ spec:
           secretKeyRef:
             name: cloudflare-api-token
             key: api-token
+    sources:
+      - gateway-httproute
