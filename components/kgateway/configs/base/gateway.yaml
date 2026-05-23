@@ -10,7 +10,7 @@ spec:
     - name: https
       protocol: HTTPS
       port: 443
-      hostname: "*.southcity.dev"
+      hostname: "*.${CLUSTER_DOMAIN}"
       allowedRoutes:
         namespaces:
           from: All

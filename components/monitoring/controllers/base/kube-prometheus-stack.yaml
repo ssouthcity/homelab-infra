@@ -63,4 +63,4 @@ spec:
             - name: http
               namespace: kgateway
           hostnames:
-            - "grafana.southcity.dev"
+            - "grafana.${CLUSTER_DOMAIN}"
