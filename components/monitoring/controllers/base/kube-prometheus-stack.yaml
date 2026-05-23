@@ -56,3 +56,11 @@ spec:
     grafana:
       defaultDashboardsEnabled: false
       adminPassword: flux
+      route:
+        main:
+          enabled: true
+          parentRefs:
+            - name: http
+              namespace: kgateway
+          hostnames:
+            - "grafana.southcity.dev"
