@@ -8,3 +8,4 @@ spec:
     realm: homelab
     enabled: true
     displayName: Homelab
+    browserFlow: browser-webauthn-passwordless
