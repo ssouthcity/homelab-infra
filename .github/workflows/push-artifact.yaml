@@ -23,6 +23,7 @@ jobs:
           - external-dns
           - gateway-api
           - kgateway
+          - kubelet-serving-cert-approver
           - metallb
           - monitoring
     steps:
