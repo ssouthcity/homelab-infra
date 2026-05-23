@@ -10,3 +10,4 @@ volumeBindingMode: Immediate
 allowVolumeExpansion: true
 mountOptions:
   - nfsvers=3
+  - nolock
