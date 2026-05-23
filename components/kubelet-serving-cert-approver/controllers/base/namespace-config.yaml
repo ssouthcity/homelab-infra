@@ -1,4 +1,0 @@
-namespace:
-  - path: spec/namespaceSelector/matchNames
-    kind: ServiceMonitor
-    group: monitoring.coreos.com
