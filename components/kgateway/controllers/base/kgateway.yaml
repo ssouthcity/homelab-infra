@@ -1,0 +1,25 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: kgateway
+spec:
+  interval: 1h
+  url: oci://cr.kgateway.dev/kgateway-dev/charts/kgateway
+  ref:
+    semver: ~2
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: kgateway
+spec:
+  interval: 1h
+  chartRef:
+    kind: OCIRepository
+    name: kgateway
+  driftDetection:
+    mode: enabled
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
