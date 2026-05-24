@@ -662,7 +662,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "cert-manager",
+  "title": "Cert Manager",
   "uid": "cert-manager",
   "version": 1
 }
