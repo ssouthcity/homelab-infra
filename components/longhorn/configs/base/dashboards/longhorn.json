@@ -2417,7 +2417,10 @@
   ],
   "refresh": "",
   "schemaVersion": 40,
-  "tags": [],
+  "tags": [
+    "longhorn",
+    "infra"
+  ],
   "templating": {
     "list": []
   },

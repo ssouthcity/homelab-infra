@@ -433,8 +433,8 @@
   "refresh": "auto",
   "schemaVersion": 42,
   "tags": [
-    "metallb ",
-    "prometheus"
+    "metallb",
+    "infra"
   ],
   "templating": {
     "list": [

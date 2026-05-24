@@ -1261,7 +1261,8 @@
   "schemaVersion": 38,
   "style": "light",
   "tags": [
-    "flux"
+    "flux",
+    "infra"
   ],
   "templating": {
     "list": [

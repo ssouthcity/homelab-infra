@@ -1440,7 +1440,10 @@
   ],
   "refresh": "",
   "schemaVersion": 39,
-  "tags": [],
+  "tags": [
+    "kgateway",
+    "infra"
+  ],
   "templating": {
     "list": [
       {
@@ -1450,8 +1453,8 @@
           "value": "prometheus"
         },
         "datasource": {
-            "type": "prometheus",
-            "uid": "Prometheus"
+          "type": "prometheus",
+          "uid": "Prometheus"
         },
         "hide": 0,
         "includeAll": false,
@@ -1473,8 +1476,8 @@
           "value": []
         },
         "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
+          "type": "prometheus",
+          "uid": "${datasource}"
         },
         "definition": "label_values(envoy_cluster_upstream_rq_total,envoy_response_code)",
         "description": "",
@@ -1497,8 +1500,8 @@
       },
       {
         "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
+          "type": "prometheus",
+          "uid": "${datasource}"
         },
         "definition": "label_values(envoy_cluster_name)",
         "hide": 0,

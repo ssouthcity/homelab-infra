@@ -590,7 +590,8 @@
   "refresh": "",
   "schemaVersion": 42,
   "tags": [
-    "cert-manager"
+    "cert-manager",
+    "infra"
   ],
   "templating": {
     "list": [

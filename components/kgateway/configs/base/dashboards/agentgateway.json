@@ -708,6 +708,10 @@
   "refresh": "15s",
   "schemaVersion": 36,
   "style": "dark",
+  "tags": [
+    "kgateway",
+    "infra"
+  ],
   "templating": {
     "list": [
       {

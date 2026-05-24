@@ -2217,6 +2217,7 @@
   "style": "dark",
   "tags": [
     "external-dns",
+    "infra",
     "dns"
   ],
   "templating": {

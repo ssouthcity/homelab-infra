@@ -1468,7 +1468,10 @@
   "preload": false,
   "refresh": "30s",
   "schemaVersion": 41,
-  "tags": [],
+  "tags": [
+    "kgateway",
+    "infra"
+  ],
   "templating": {
     "list": [
       {
