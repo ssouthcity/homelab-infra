@@ -35,3 +35,6 @@ spec:
           namespace: kgateway
       hostnames:
         - "longhorn.${CLUSTER_DOMAIN}"
+    metrics:
+      serviceMonitor:
+        enabled: true
