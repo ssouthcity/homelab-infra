@@ -23,3 +23,7 @@ spec:
     crds: Create
   upgrade:
     crds: CreateReplace
+  values:
+    controller:
+      serviceMonitor:
+        enabled: true
