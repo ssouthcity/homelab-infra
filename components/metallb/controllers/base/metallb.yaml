@@ -25,7 +25,14 @@ spec:
     crds: Create
   upgrade:
     crds: CreateReplace
-  # values:
-    # prometheus:
-    #   serviceMonitor:
-    #     enabled: true
+  values:
+    prometheus:
+      rbacPrometheus: false
+      serviceMonitor:
+        enabled: true
+        controller:
+          additionalLabels:
+            app.kubernetes.io/component: monitoring
+        speaker:
+          additionalLabels:
+            app.kubernetes.io/component: monitoring
