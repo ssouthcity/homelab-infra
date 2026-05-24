@@ -30,9 +30,3 @@ spec:
       rbacPrometheus: false
       serviceMonitor:
         enabled: true
-        controller:
-          additionalLabels:
-            app.kubernetes.io/component: monitoring
-        speaker:
-          additionalLabels:
-            app.kubernetes.io/component: monitoring

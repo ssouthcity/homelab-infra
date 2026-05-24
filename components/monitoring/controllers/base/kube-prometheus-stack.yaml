@@ -46,13 +46,9 @@ spec:
             cpu: 200m
             memory: 200Mi
         serviceMonitorNamespaceSelector: {}
-        serviceMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/component: monitoring
+        serviceMonitorSelector: {}
         podMonitorNamespaceSelector: {}
-        podMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/component: monitoring
+        podMonitorSelector: {}
     grafana:
       defaultDashboardsEnabled: false
       adminPassword: flux
