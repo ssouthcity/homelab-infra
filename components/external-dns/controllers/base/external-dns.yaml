@@ -39,3 +39,5 @@ spec:
     sources:
       - gateway-httproute
     policy: sync
+    serviceMonitor:
+      enabled: true
