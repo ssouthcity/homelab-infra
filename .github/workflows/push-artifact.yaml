@@ -24,6 +24,7 @@ jobs:
           - csi-nfs
           - external-dns
           - gateway-api
+          - homepage
           - keycloak
           - kgateway
           - kubelet-serving-cert-approver
