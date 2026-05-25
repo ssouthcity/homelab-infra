@@ -97,6 +97,11 @@ httpRoute:
 env:
   TZ: "UTC"
 
+# -- Root domain used to access the instance
+# Added to the HOMEPAGE_ALLOWED_HOSTS environment variable
+# Used to prevent cross-site attacks
+rootURL: "gethomepage.dev"
+
 # -- Homepage configuration files
 # Each key is mounted as a file in /app/config/
 # Supports tpl templating so you can reference Helm values
