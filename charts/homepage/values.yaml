@@ -95,14 +95,7 @@ httpRoute:
 # -- Environment variables for the homepage container
 # Keys with simple values are set directly; use YAML anchors for valueFrom
 env:
-  HOMEPAGE_ALLOWED_HOSTS: ""
   TZ: "UTC"
-
-# -- Env vars using valueFrom (e.g. fieldRef, secretKeyRef, configMapKeyRef)
-envValueFrom:
-  MY_POD_IP:
-    fieldRef:
-      fieldPath: status.podIP
 
 # -- Homepage configuration files
 # Each key is mounted as a file in /app/config/

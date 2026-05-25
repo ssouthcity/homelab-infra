@@ -47,25 +47,15 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            {{- if .Values.env.HOMEPAGE_ALLOWED_HOSTS }}
-            - name: HOMEPAGE_ALLOWED_HOSTS
-              value: {{ tpl .Values.env.HOMEPAGE_ALLOWED_HOSTS $ | quote }}
-            {{- else }}
+            - name: MY_POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
             - name: HOMEPAGE_ALLOWED_HOSTS
               value: "$(MY_POD_IP):3000,{{ include "homepage.fullname" . }}"
-            {{- end }}
             {{- range $key, $val := .Values.env }}
-            {{- if and $val (not (eq $key "HOMEPAGE_ALLOWED_HOSTS")) }}
             - name: {{ $key }}
               value: {{ tpl $val $ | quote }}
-            {{- end }}
-            {{- end }}
-            {{- range $key, $val := .Values.envValueFrom }}
-            {{- if $val }}
-            - name: {{ $key }}
-              valueFrom:
-                {{- toYaml $val | nindent 16 }}
-            {{- end }}
             {{- end }}
           ports:
             - name: http
