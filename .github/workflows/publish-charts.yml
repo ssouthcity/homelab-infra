@@ -43,7 +43,7 @@ jobs:
             oci://ghcr.io/${{ github.repository_owner }}/charts \
             &> push-metadata.txt
           CHART_DIGEST=$(awk '/Digest: /{print $2}' push-metadata.txt)
-          echo "digest=${CHART_DIGEST}" | tee -a $GITHUB_ENV
+          echo "digest=${CHART_DIGEST}" | tee -a $GITHUB_OUTPUT
       - name: Sign Chart
         run: |
           cosign sign --yes ghcr.io/${{ github.repository_owner }}/charts/${{ matrix.chart }}:${{ steps.publish.outputs.digest }}
