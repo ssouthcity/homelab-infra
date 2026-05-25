@@ -6,3 +6,9 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 14
+  - package-ecosystem: "helm"
+    directory: "/charts"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 14
