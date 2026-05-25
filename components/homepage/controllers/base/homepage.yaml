@@ -6,8 +6,8 @@ spec:
   interval: 1h
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/charts/homepage
-  # ref:
-  #   semver: ~0
+  ref:
+    semver: ~0
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
