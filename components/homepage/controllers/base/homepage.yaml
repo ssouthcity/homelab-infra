@@ -29,6 +29,13 @@ spec:
   values:
     httpRoute:
       enabled: true
+      annotations:
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/name: Homepage
+        gethomepage.dev/description: Dynamically Detected Homepage
+        gethomepage.dev/group: Discoverability
+        gethomepage.dev/icon: homepage.png
+        gethomepage.dev/pod-selector: ""
       parentRefs:
         - name: http
           namespace: kgateway
