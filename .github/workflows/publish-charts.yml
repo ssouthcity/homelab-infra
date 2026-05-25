@@ -46,7 +46,7 @@ jobs:
           echo "digest=${CHART_DIGEST}" | tee -a $GITHUB_OUTPUT
       - name: Sign Chart
         run: |
-          cosign sign --yes ghcr.io/${{ github.repository_owner }}/charts/${{ matrix.chart }}:${{ steps.publish.outputs.digest }}
+          cosign sign --yes ghcr.io/${{ github.repository_owner }}/charts/${{ matrix.chart }}@${{ steps.publish.outputs.digest }}
       - name: Verify Signature
         run: |
           cosign verify "ghcr.io/${{ github.repository_owner }}/charts/${{ matrix.chart }}@${{ steps.publish.outputs.digest }}" \
