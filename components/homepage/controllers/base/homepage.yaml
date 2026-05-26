@@ -15,7 +15,7 @@ spec:
     provider: cosign
     matchOIDCIdentity:
       - issuer: ^https://token\.actions\.githubusercontent\.com$
-        subject: ^https://github\.com/ssouthcity/homelab-infra/\.github/workflows/publish-charts\.yaml@refs/heads/main$
+        subject: ^https://github\.com/ssouthcity/charts/\.github/workflows/publish-chart\.yaml@refs/heads/main$
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
