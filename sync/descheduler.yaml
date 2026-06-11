@@ -1,0 +1,7 @@
+apiVersion: mirror.plugin.fluxcd.io/v1beta1
+kind: Config
+charts:
+  - name: descheduler
+    source: https://kubernetes-sigs.github.io/descheduler/
+    destination: oci://ghcr.io/ssouthcity/mirror/charts
+    limit: 3

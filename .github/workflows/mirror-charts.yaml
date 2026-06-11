@@ -14,6 +14,7 @@ jobs:
       matrix:
         component:
           - cert-manager
+          - descheduler
           - external-dns
           - longhorn
           - metallb
