@@ -24,3 +24,16 @@ spec:
   driftDetection:
     mode: enabled
   values: {}
+  postRenderers:
+    - kustomize:
+        patches:
+          - target:
+              kind: Deployment
+              name: surrealdb
+            patch: |
+              - op: add
+                path: /spec/template/spec/securityContext
+                value:
+                  fsGroup: 1000
+                  runAsUser: 1000
+                  runAsGroup: 1000
