@@ -1,0 +1,8 @@
+apiVersion: rivers.io/v1alpha1
+kind: CodeLocation
+metadata:
+  name: rivers-sandbox
+spec:
+  image: ghcr.io/ssouthcity/rivers-sandbox
+  tag: main
+  module: main
