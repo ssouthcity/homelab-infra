@@ -5,4 +5,4 @@ metadata:
 spec:
   image: ghcr.io/ssouthcity/rivers-sandbox
   tag: main
-  module: main
+  module: src.rivers_sandbox.main
