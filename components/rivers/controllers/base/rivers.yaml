@@ -45,10 +45,17 @@ spec:
           - target:
               kind: Deployment
               name: surrealdb
-            patch: |
+            patch: |-
               - op: add
                 path: /spec/template/spec/securityContext
                 value:
                   fsGroup: 1000
                   runAsUser: 1000
                   runAsGroup: 1000
+          - target:
+              kind: Role
+              name: rivers-executor
+            patch: |-
+              - op: replace
+                path: /rules/1/verbs
+                value: ["get", "list", "watch", "create", "update", "patch", "delete"]
