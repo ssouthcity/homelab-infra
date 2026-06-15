@@ -6,3 +6,24 @@ spec:
   image: ghcr.io/ssouthcity/rivers-sandbox
   tag: main
   module: src.rivers_sandbox.main
+  env:
+    - name: AWS_TABLE_URI
+      valueFrom:
+        secretKeyRef:
+          name: rivers-sandbox
+          key: AWS_TABLE_URI
+    - name: AWS_ENDPOINT
+      valueFrom:
+        secretKeyRef:
+          name: rivers-sandbox
+          key: AWS_ENDPOINT
+    - name: AWS_ACCESS_KEY_ID
+      valueFrom:
+        secretKeyRef:
+          name: rivers-sandbox
+          key: AWS_ACCESS_KEY_ID
+    - name: AWS_SECRET_ACCESS_KEY
+      valueFrom:
+        secretKeyRef:
+          name: rivers-sandbox
+          key: AWS_SECRET_ACCESS_KEY
