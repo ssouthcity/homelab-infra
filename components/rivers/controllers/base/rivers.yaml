@@ -32,7 +32,7 @@ spec:
           gethomepage.dev/name: Rivers
           gethomepage.dev/description: Asset Orchestration
           gethomepage.dev/group: Data Engineering
-          gethomepage.dev/icon: rivers.png
+          gethomepage.dev/icon: https://raw.githubusercontent.com/ion-elgreco/rivers/refs/heads/main/assets/logo.svg
           gethomepage.dev/pod-selector: "app.kubernetes.io/instance=rivers"
         parentRefs:
           - name: http
