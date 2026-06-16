@@ -7,7 +7,7 @@ spec:
   tag: main
   module: src.rivers_sandbox.main
   env:
-    - name: AWS_TABLE_URI
+    - name: TABLE_URI
       valueFrom:
         secretKeyRef:
           name: rivers-sandbox
