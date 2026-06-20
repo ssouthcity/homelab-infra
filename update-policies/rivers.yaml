@@ -1,0 +1,41 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+metadata:
+  name: rivers
+spec:
+  provider: generic
+  image: ghcr.io/ion-elgreco/charts/rivers
+  interval: 12h
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: rivers
+spec:
+  imageRepositoryRef:
+    name: rivers
+  policy:
+    semver:
+      range: ~0
+  digestReflectionPolicy: IfNotPresent
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+metadata:
+  name: rivers-crds
+spec:
+  provider: generic
+  image: ghcr.io/ion-elgreco/charts/rivers-crds
+  interval: 12h
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: rivers-crds
+spec:
+  imageRepositoryRef:
+    name: rivers-crds
+  policy:
+    semver:
+      range: ~0
+  digestReflectionPolicy: IfNotPresent
