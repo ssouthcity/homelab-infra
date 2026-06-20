@@ -1,0 +1,20 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+metadata:
+  name: kube-prometheus-stack
+spec:
+  provider: generic
+  image: ghcr.io/prometheus-community/charts/kube-prometheus-stack
+  interval: 12h
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: kube-prometheus-stack
+spec:
+  imageRepositoryRef:
+    name: kube-prometheus-stack
+  policy:
+    semver:
+      range: ">=85.2.0"
+  digestReflectionPolicy: IfNotPresent
