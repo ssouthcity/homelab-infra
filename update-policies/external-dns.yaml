@@ -4,6 +4,7 @@ metadata:
   name: external-dns
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/mirror/charts/external-dns
   interval: 12h
 ---

@@ -4,6 +4,7 @@ metadata:
   name: kube-prometheus-stack
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/prometheus-community/charts/kube-prometheus-stack
   interval: 12h
 ---

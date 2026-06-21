@@ -4,6 +4,7 @@ metadata:
   name: cert-manager
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/mirror/charts/cert-manager
   interval: 12h
 ---

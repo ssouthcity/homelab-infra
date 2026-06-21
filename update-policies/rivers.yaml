@@ -4,6 +4,7 @@ metadata:
   name: rivers
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ion-elgreco/charts/rivers
   interval: 12h
 ---

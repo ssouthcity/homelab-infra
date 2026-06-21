@@ -4,6 +4,7 @@ metadata:
   name: cloudnative-pg
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/cloudnative-pg/charts/cloudnative-pg
   interval: 12h
 ---

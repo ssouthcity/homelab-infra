@@ -4,6 +4,7 @@ metadata:
   name: longhorn
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/mirror/charts/longhorn
   interval: 12h
 ---

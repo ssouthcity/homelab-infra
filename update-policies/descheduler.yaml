@@ -4,6 +4,7 @@ metadata:
   name: descheduler
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/mirror/charts/descheduler
   interval: 12h
 ---

@@ -4,6 +4,7 @@ metadata:
   name: kgateway
 spec:
   provider: generic
+  serviceAccountName: flux
   image: cr.kgateway.dev/kgateway-dev/charts/kgateway
   interval: 12h
 ---

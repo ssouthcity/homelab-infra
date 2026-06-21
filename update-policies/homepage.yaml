@@ -4,6 +4,7 @@ metadata:
   name: homepage
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/charts/homepage
   interval: 12h
 ---

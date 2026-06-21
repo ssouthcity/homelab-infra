@@ -4,6 +4,7 @@ metadata:
   name: metallb
 spec:
   provider: generic
+  serviceAccountName: flux
   image: ghcr.io/ssouthcity/mirror/charts/metallb
   interval: 12h
 ---
