@@ -6,8 +6,8 @@ spec:
   interval: 1h
   url: oci://cr.kgateway.dev/kgateway-dev/charts/kgateway-crds
   ref:
-    tag: 2.3.4 # {"$imagepolicy": "updates-infra:kgateway-crds:tag"}
-    digest: sha256:253793e4ea2d9b913cc01f147e1a77a516711574b9f28884f8aac285348c2226 # {"$imagepolicy": "updates-infra:kgateway-crds:digest"}
+    tag: v2.3.4 # {"$imagepolicy": "updates-infra:kgateway-crds:tag"}
+    digest: sha256:6096a8082c7e15e3a0ebef3147666f117c7d66e72a4ae7fad35ab66572495fcf # {"$imagepolicy": "updates-infra:kgateway-crds:digest"}
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

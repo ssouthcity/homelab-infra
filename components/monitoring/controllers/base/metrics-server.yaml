@@ -9,8 +9,8 @@ spec:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: copy
   ref:
-    tag: 3.13.0 # {"$imagepolicy": "updates-infra:metrics-server:tag"}
-    digest: sha256:20d691aaa9a3dfd90fdffb8c341c0bb0033101ffb0aae66d83c05d2950bf8c54 # {"$imagepolicy": "updates-infra:metrics-server:digest"}
+    tag: 3.13.1 # {"$imagepolicy": "updates-infra:metrics-server:tag"}
+    digest: sha256:13b20bd63b807f851a4f131a6c2af20741a8450d81876467b9cf67de5b9a4bf5 # {"$imagepolicy": "updates-infra:metrics-server:digest"}
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
