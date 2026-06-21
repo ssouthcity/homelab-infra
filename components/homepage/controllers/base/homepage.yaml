@@ -7,7 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/charts/homepage
   ref:
-    semver: ~0
+    tag: 0.2.0 # {"$imagepolicy": "updates-infra:homepage:tag"}
+    digest: sha256:b5e16a8dd3357c9e387928e3ea0d2aee9e7fb63bee72c6035d353f985ad4bd7d # {"$imagepolicy": "updates-infra:homepage:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract

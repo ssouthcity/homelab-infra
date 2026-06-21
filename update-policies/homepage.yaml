@@ -1,20 +1,20 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: rivers
+  name: homepage
 spec:
   provider: generic
-  image: ghcr.io/ion-elgreco/charts/rivers
+  image: ghcr.io/ssouthcity/charts/homepage
   interval: 12h
 ---
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: rivers
+  name: homepage
 spec:
   imageRepositoryRef:
-    name: rivers
+    name: homepage
   policy:
     semver:
-      range: ">=0.2.1"
+      range: ">=0.2.0"
   digestReflectionPolicy: IfNotPresent

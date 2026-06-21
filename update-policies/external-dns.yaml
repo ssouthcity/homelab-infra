@@ -1,20 +1,20 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: rivers
+  name: external-dns
 spec:
   provider: generic
-  image: ghcr.io/ion-elgreco/charts/rivers
+  image: ghcr.io/ssouthcity/mirror/charts/external-dns
   interval: 12h
 ---
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: rivers
+  name: external-dns
 spec:
   imageRepositoryRef:
-    name: rivers
+    name: external-dns
   policy:
     semver:
-      range: ">=0.2.1"
+      range: ">=1.21.1"
   digestReflectionPolicy: IfNotPresent

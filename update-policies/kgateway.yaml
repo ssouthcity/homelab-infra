@@ -1,20 +1,20 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: rivers
+  name: kgateway
 spec:
   provider: generic
-  image: ghcr.io/ion-elgreco/charts/rivers
+  image: cr.kgateway.dev/kgateway-dev/charts/kgateway
   interval: 12h
 ---
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: rivers
+  name: kgateway
 spec:
   imageRepositoryRef:
-    name: rivers
+    name: kgateway
   policy:
     semver:
-      range: ">=0.2.1"
+      range: ">=2.3.4"
   digestReflectionPolicy: IfNotPresent

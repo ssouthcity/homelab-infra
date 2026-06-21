@@ -1,20 +1,20 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: rivers
+  name: longhorn
 spec:
   provider: generic
-  image: ghcr.io/ion-elgreco/charts/rivers
+  image: ghcr.io/ssouthcity/mirror/charts/longhorn
   interval: 12h
 ---
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: rivers
+  name: longhorn
 spec:
   imageRepositoryRef:
-    name: rivers
+    name: longhorn
   policy:
     semver:
-      range: ">=0.2.1"
+      range: ">=1.12.0"
   digestReflectionPolicy: IfNotPresent

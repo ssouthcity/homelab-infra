@@ -1,19 +1,19 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: rivers
+  name: rivers-crds
 spec:
   provider: generic
-  image: ghcr.io/ion-elgreco/charts/rivers
+  image: ghcr.io/ion-elgreco/charts/rivers-crds
   interval: 12h
 ---
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: rivers
+  name: rivers-crds
 spec:
   imageRepositoryRef:
-    name: rivers
+    name: rivers-crds
   policy:
     semver:
       range: ">=0.2.1"

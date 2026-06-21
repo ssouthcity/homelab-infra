@@ -7,7 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/metallb
   ref:
-    semver: ~0
+    tag: 0.16.1 # {"$imagepolicy": "updates-infra:metallb:tag"}
+    digest: sha256:fce8488843290973447cc7a2f74bb00eec4573a63f9f84141b0cfd5ac4b1629a # {"$imagepolicy": "updates-infra:metallb:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
