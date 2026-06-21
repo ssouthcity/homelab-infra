@@ -35,7 +35,7 @@ jobs:
           - rivers
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - name: Setup Flux CLI
         uses: controlplaneio-fluxcd/distribution/actions/setup@d055f6e0af475f179ab084bca4ab1896b47f18b6 # v2.8.8
       - name: Setup Cosign
