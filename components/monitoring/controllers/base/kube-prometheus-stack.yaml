@@ -9,8 +9,8 @@ spec:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: copy
   ref:
-    tag: 87.0.0 # {"$imagepolicy": "updates-infra:kube-prometheus-stack:tag"}
-    digest: sha256:a5df5f4fbd6f42a233cabe5cb6896cc8aac81ee9cb244f76c5d8dcaac9afb637 # {"$imagepolicy": "updates-infra:kube-prometheus-stack:digest"}
+    tag: 87.0.1 # {"$imagepolicy": "updates-infra:kube-prometheus-stack:tag"}
+    digest: sha256:4915ebee791dba1a6b6db39ca8d0cac849cbe1cffca5cfc33b641fa17e7e9070 # {"$imagepolicy": "updates-infra:kube-prometheus-stack:digest"}
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
