@@ -7,8 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/cert-manager
   ref:
-    tag: 1.20.2 # {"$imagepolicy": "updates-infra:cert-manager:tag"}
-    digest: sha256:294a761ca972ea11ae79b9219960ca13a5337a1cbb550604c151586d266159eb # {"$imagepolicy": "updates-infra:cert-manager:digest"}
+    tag: 1.20.3 # {"$imagepolicy": "updates-infra:cert-manager:tag"}
+    digest: sha256:ef5cf71fc9494e8b06b2f7450e9e31fcb6b78bca1af415f6e2149e744e98faa2 # {"$imagepolicy": "updates-infra:cert-manager:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
