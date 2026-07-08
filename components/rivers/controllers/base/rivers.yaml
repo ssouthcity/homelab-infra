@@ -7,8 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ion-elgreco/charts/rivers
   ref:
-    tag: 0.2.1 # {"$imagepolicy": "updates-infra:rivers:tag"}
-    digest: sha256:ad975b1e19a7f93c954c2af86ab34806f2747529b474d2bca070e8d2e6958cd8 # {"$imagepolicy": "updates-infra:rivers:digest"}
+    tag: 0.2.2 # {"$imagepolicy": "updates-infra:rivers:tag"}
+    digest: sha256:8cf30e589ccb918b91d65d1b1e32b5d14f8d9d955ff2999594290db00d464889 # {"$imagepolicy": "updates-infra:rivers:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
