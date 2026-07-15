@@ -1,7 +1,7 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: homelab-nfs
+  name: nfs
 parameters:
   server: nas-1.southcity.dev
   share: /var/nfs/shared/Homelab_stage
