@@ -47,7 +47,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Push artifact
-        uses: controlplaneio-fluxcd/distribution/actions/push@d055f6e0af475f179ab084bca4ab1896b47f18b6 # v2.8.8
+        uses: controlplaneio-fluxcd/distribution/actions/push@0c61da187a859d15c03b81fa94244d673d26ef20 # v2.9.0
         id: push
         with:
           repository: ghcr.io/${{ github.repository }}/${{ matrix.component }}
