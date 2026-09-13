@@ -7,8 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/longhorn
   ref:
-    tag: 1.12.0 # {"$imagepolicy": "updates-infra:longhorn:tag"}
-    digest: sha256:06137f258cb051e415a6794e8606c2d1561e824ff87885563f37b096be0934fe # {"$imagepolicy": "updates-infra:longhorn:digest"}
+    tag: 1.12.1 # {"$imagepolicy": "updates-infra:longhorn:tag"}
+    digest: sha256:fa0442c0f42d8e557a90cd591b583448160679ef9c72b6ff9d3eaa14a8b365f0 # {"$imagepolicy": "updates-infra:longhorn:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
