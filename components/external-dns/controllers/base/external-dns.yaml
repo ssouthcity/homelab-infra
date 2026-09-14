@@ -7,8 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/external-dns
   ref:
-    tag: 1.21.1 # {"$imagepolicy": "updates-infra:external-dns:tag"}
-    digest: sha256:705f1ed32d680d0887d14f8310c07ee190ec164a22cd82cbc75016619794c78e # {"$imagepolicy": "updates-infra:external-dns:digest"}
+    tag: 1.22.0 # {"$imagepolicy": "updates-infra:external-dns:tag"}
+    digest: sha256:2591abfa272806d61abf46539e058ad7dc9c8a4349ab245e2e36484cd3fc645d # {"$imagepolicy": "updates-infra:external-dns:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
