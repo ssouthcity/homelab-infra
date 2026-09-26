@@ -6,8 +6,8 @@ spec:
   interval: 1h
   url: oci://ghcr.io/cloudnative-pg/charts/cloudnative-pg
   ref:
-    tag: 0.28.3 # {"$imagepolicy": "updates-infra:cloudnative-pg:tag"}
-    digest: sha256:e01684efd9aa83c81578a2f624c0bd702e607844b8f0bf19196230322703485a # {"$imagepolicy": "updates-infra:cloudnative-pg:digest"}
+    tag: 0.29.1 # {"$imagepolicy": "updates-infra:cloudnative-pg:tag"}
+    digest: sha256:3245fa051bb21d0dd9246272f57a2760b4234817a164a3167d2a1e7fb9f63fd9 # {"$imagepolicy": "updates-infra:cloudnative-pg:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
