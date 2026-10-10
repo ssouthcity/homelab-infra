@@ -7,8 +7,8 @@ spec:
   serviceAccountName: flux
   url: oci://ghcr.io/ssouthcity/mirror/charts/descheduler
   ref:
-    tag: 0.36.0 # {"$imagepolicy": "updates-infra:descheduler:tag"}
-    digest: sha256:97c9f05dba4244f690719b5525c2a867c35ad3e7a036cd1904a3577e4924afb2 # {"$imagepolicy": "updates-infra:descheduler:digest"}
+    tag: 0.37.0 # {"$imagepolicy": "updates-infra:descheduler:tag"}
+    digest: sha256:1289db02aa667ea2a85ec708d51f7962fcad9a832425eb29276fac14eb9cdcb4 # {"$imagepolicy": "updates-infra:descheduler:digest"}
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: extract
